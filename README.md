@@ -8,10 +8,13 @@
 
 ## Data Availability
 
-The datasets required for this project are hosted on Zenodo due to file size limits.
-**Download Link:** [https://zenodo.org/records/18143325](https://zenodo.org/records/18143325)
+The data for this project is hosted in two locations depending on file size:
 
-> **Note:** Please download the data and ensure the `.mat` files are placed in their corresponding folders as described below to ensure the scripts run correctly.
+1.  **Included in Repository:** Small datasets (e.g., for Figure 1) are directly included in the corresponding folders in this GitHub repository.
+2.  **Hosted on Zenodo:** Larger datasets (e.g., for Figure 3/Behavioral Synergy) are hosted on Zenodo.
+    * **Download Link:** [https://zenodo.org/records/18143325](https://zenodo.org/records/18143325)
+
+> **Note:** For data downloaded from Zenodo, please place the `.mat` files into their corresponding local folders as indicated below.
 
 ## Data Preparation & Usage
 
@@ -20,19 +23,17 @@ Below is the guide to reproducing the specific figures using the scripts provide
 ### 1. Figure 1B(right) & Figure 1C(right)
 * **Folder:** `francsyn`
 * **Script to Run:** `info_calculation_forL.m`
-* **Data Dependencies:**
-    The script reads the following data (downloaded from Zenodo) from the `francsyn` directory:
-    * `neuron_data.mat`
-    * `toyvscell_fullresponse.mat`
+* **Data Source:** **Included in this repository.**
+    * The script reads the local files: `neuron_data.mat` and `toyvscell_fullresponse.mat`.
 
 ### 2. Figure 3C & Figure 3D
 * **Folder:** `behaviral_synergy`
 * **Script to Run:** `behav_inf.m`
-* **Data Dependencies:**
-    The script reads the following data from the `behaviral_synergy` directory:
-    * `ga_allinfodata.mat`
-    * `re allinfodata.mat`
-    * `xt allinfodata.mat`
+* **Data Source:** **Download from Zenodo.**
+    * Please download and place the following files into the `behaviral_synergy` directory:
+        * `ga_allinfodata.mat`
+        * `re allinfodata.mat`
+        * `xt allinfodata.mat`
 
 ### 3. Figure 4C-E
 * **Folder:** `opulation Stimulus synergy`
